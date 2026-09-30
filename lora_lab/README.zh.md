@@ -158,30 +158,3 @@ WER以`corpus_wer_percent`为主，另保留逐句WER均值；SIM用sim_ref_audi
 英文WER内部会设置CUDA_VISIBLE_DEVICES；新入口保留用户指定的物理GPU值，
 SIM在单可见GPU进程内使用cuda:0。
 
-## 7. GitHub提交范围
-
-应提交：上游源码及许可证、lora_lab代码、说明、示例配置、benchmarks中的小型结果与ID清单。
-不提交：data、ckpts、runs、logs、wandb、私有env配置、下载缓存、checkpoint和打包文件。
-根目录results被忽略；本实验公共结果专门放在lora_lab/benchmarks。
-
-从当前原服务器状态只暂存以下路径，不提交无关Dockerfile删除：
-
-```bash
-git add .gitignore README.md README.upstream.md lora_lab
-git diff --cached --stat
-git diff --cached --name-only
-# 检查暂存内容，确认无个人配置/模型/音频。
-git commit -m "Document LJSpeech LoRA comparison and add reproducible evaluation tools"
-```
-
-在GitHub创建自己的空仓库，然后设置独立远程名，避免误推上游：
-
-```bash
-# 把YOUR_ACCOUNT替换成自己的GitHub用户名。
-git remote add publish https://github.com/YOUR_ACCOUNT/F5-TTS-LoRA.git
-git push -u publish HEAD:main
-```
-
-如果publish远程或目标main已存在，先查看实际状态，不强推。
-.gitignore不会移除历史已跟踪文件；首次发布前也应检查仓库原有跟踪内容。
-原Dockerfile删除保持未暂存，本工具不会替你决定是否删除它。
