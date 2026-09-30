@@ -1,0 +1,37 @@
+{
+  "provenance": "User-supplied completed remote run; not rerun during code packaging",
+  "training_seed": 666,
+  "inference_seed": 666,
+  "methods": {
+    "base": {
+      "count": 100,
+      "corpus_wer_percent": 4.683698296836983,
+      "sim_mean": 0.6470079255104065,
+      "utmos_mean": 4.2589942383766175
+    },
+    "full": {
+      "count": 100,
+      "corpus_wer_percent": 4.744525547445255,
+      "sim_mean": 0.7596979463100433,
+      "utmos_mean": 4.304584815502166
+    },
+    "r8": {
+      "count": 100,
+      "corpus_wer_percent": 4.562043795620438,
+      "sim_mean": 0.7265838181972504,
+      "utmos_mean": 4.331766650676728
+    },
+    "r16": {
+      "count": 100,
+      "corpus_wer_percent": 4.562043795620438,
+      "sim_mean": 0.7289040267467499,
+      "utmos_mean": 4.358857319355011
+    },
+    "r32": {
+      "count": 100,
+      "corpus_wer_percent": 4.5012165450121655,
+      "sim_mean": 0.7397521018981934,
+      "utmos_mean": 4.3474874234199525
+    }
+  }
+}

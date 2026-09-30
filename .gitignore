@@ -1,4 +1,8 @@
 # Customed
+/scripts/env.local.sh
+/logs/
+/lora_splits/
+/lora_exports/
 .vscode/
 tests/
 runs/
@@ -169,3 +173,18 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Local review/update bundles and credentials
+/f5tts-lora-review.tar.gz
+/f5tts-lora-github-update.tar.gz
+.env.*
+!.env.example
+.netrc
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+# Linux crash dumps (keep source files named core.py)
+core
+core.[0-9]*
+/lora_lab/env.local.sh

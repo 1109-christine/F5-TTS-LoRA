@@ -1,0 +1,47 @@
+{
+  "base": {
+    "count": 100,
+    "corpus_wer_percent": 4.683698296836983,
+    "mean_utterance_wer_percent": 4.583346078399249,
+    "substitutions": 44,
+    "deletions": 29,
+    "insertions": 4,
+    "reference_words": 1644
+  },
+  "full": {
+    "count": 100,
+    "corpus_wer_percent": 4.744525547445255,
+    "mean_utterance_wer_percent": 4.782734701472082,
+    "substitutions": 42,
+    "deletions": 31,
+    "insertions": 5,
+    "reference_words": 1644
+  },
+  "r8": {
+    "count": 100,
+    "corpus_wer_percent": 4.562043795620438,
+    "mean_utterance_wer_percent": 4.521613469762615,
+    "substitutions": 40,
+    "deletions": 30,
+    "insertions": 5,
+    "reference_words": 1644
+  },
+  "r16": {
+    "count": 100,
+    "corpus_wer_percent": 4.562043795620438,
+    "mean_utterance_wer_percent": 4.550133968871349,
+    "substitutions": 41,
+    "deletions": 29,
+    "insertions": 5,
+    "reference_words": 1644
+  },
+  "r32": {
+    "count": 100,
+    "corpus_wer_percent": 4.5012165450121655,
+    "mean_utterance_wer_percent": 4.487169652710103,
+    "substitutions": 43,
+    "deletions": 26,
+    "insertions": 5,
+    "reference_words": 1644
+  }
+}

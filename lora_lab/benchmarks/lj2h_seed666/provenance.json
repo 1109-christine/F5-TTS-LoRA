@@ -1,0 +1,212 @@
+{
+  "original_manifest_sha256": {
+    "train": "aa7fa6736bd434734914da93398b5a9c5096dfe2068874adf8c78bcc1ca04e9c",
+    "val": "f96f0256ba96305cb8cae6d2f69d01b56bace2c8c09291aef7dee241d4bf4c5b",
+    "test": "3693ab0c4b9d6bebb4ec7890d5f2cccac0692665b564c5aa2645010aa5458be2",
+    "reference": "c5ecf277c1c1e2dd27ab2725cacf62aadb1e058cbc0ddf59a96d04b885097996"
+  },
+  "training": {
+    "full": {
+      "args": {
+        "mode": "full",
+        "rank": 8,
+        "alpha": 16.0,
+        "dropout": 0.0,
+        "lr": 1e-05,
+        "updates": 500,
+        "warmup": 50,
+        "accum": 8,
+        "save_every": 50,
+        "precision": "bf16",
+        "checkpoint_activations": true,
+        "seed": 666
+      },
+      "meta": {
+        "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+        "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+        "train_sha256": "aa7fa6736bd434734914da93398b5a9c5096dfe2068874adf8c78bcc1ca04e9c",
+        "val_sha256": "f96f0256ba96305cb8cae6d2f69d01b56bace2c8c09291aef7dee241d4bf4c5b",
+        "upstream_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "code_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "implementation_sha256": "63243fc6216e5f35718c327a0b5a16a90158c7e6312493940a290ac53957002d",
+        "trainable_params": 337096804,
+        "total_params": 337096804,
+        "ema": false
+      }
+    },
+    "r8": {
+      "args": {
+        "mode": "lora",
+        "rank": 8,
+        "alpha": 16.0,
+        "dropout": 0.0,
+        "lr": 0.0001,
+        "updates": 500,
+        "warmup": 50,
+        "accum": 8,
+        "save_every": 50,
+        "precision": "bf16",
+        "checkpoint_activations": true,
+        "seed": 666
+      },
+      "meta": {
+        "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+        "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+        "train_sha256": "aa7fa6736bd434734914da93398b5a9c5096dfe2068874adf8c78bcc1ca04e9c",
+        "val_sha256": "f96f0256ba96305cb8cae6d2f69d01b56bace2c8c09291aef7dee241d4bf4c5b",
+        "upstream_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "code_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "implementation_sha256": "63243fc6216e5f35718c327a0b5a16a90158c7e6312493940a290ac53957002d",
+        "trainable_params": 1441792,
+        "total_params": 338538596,
+        "ema": false
+      }
+    },
+    "r16": {
+      "args": {
+        "mode": "lora",
+        "rank": 16,
+        "alpha": 32.0,
+        "dropout": 0.0,
+        "lr": 0.0001,
+        "updates": 500,
+        "warmup": 50,
+        "accum": 8,
+        "save_every": 50,
+        "precision": "bf16",
+        "checkpoint_activations": true,
+        "seed": 666
+      },
+      "meta": {
+        "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+        "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+        "train_sha256": "aa7fa6736bd434734914da93398b5a9c5096dfe2068874adf8c78bcc1ca04e9c",
+        "val_sha256": "f96f0256ba96305cb8cae6d2f69d01b56bace2c8c09291aef7dee241d4bf4c5b",
+        "upstream_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "code_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "implementation_sha256": "63243fc6216e5f35718c327a0b5a16a90158c7e6312493940a290ac53957002d",
+        "trainable_params": 2883584,
+        "total_params": 339980388,
+        "ema": false
+      }
+    },
+    "r32": {
+      "args": {
+        "mode": "lora",
+        "rank": 32,
+        "alpha": 64.0,
+        "dropout": 0.0,
+        "lr": 0.0001,
+        "updates": 500,
+        "warmup": 50,
+        "accum": 8,
+        "save_every": 50,
+        "precision": "bf16",
+        "checkpoint_activations": true,
+        "seed": 666
+      },
+      "meta": {
+        "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+        "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+        "train_sha256": "aa7fa6736bd434734914da93398b5a9c5096dfe2068874adf8c78bcc1ca04e9c",
+        "val_sha256": "f96f0256ba96305cb8cae6d2f69d01b56bace2c8c09291aef7dee241d4bf4c5b",
+        "upstream_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "code_sha": "283252563dbf91be625e0c27926acfaac449186c",
+        "implementation_sha256": "63243fc6216e5f35718c327a0b5a16a90158c7e6312493940a290ac53957002d",
+        "trainable_params": 5767168,
+        "total_params": 342863972,
+        "ema": false
+      }
+    }
+  },
+  "generation": {
+    "base": {
+      "seed": 666,
+      "nfe_step": 32,
+      "cfg_strength": 2.0,
+      "sway_sampling_coef": -1,
+      "seed_policy": "seed + manifest row index",
+      "solver": "euler",
+      "inference_dtype": "float32",
+      "duration_policy": "prompt-text-ratio",
+      "manifest_sha256": "3693ab0c4b9d6bebb4ec7890d5f2cccac0692665b564c5aa2645010aa5458be2",
+      "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+      "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+      "checkpoint_sha256": null
+    },
+    "full": {
+      "seed": 666,
+      "nfe_step": 32,
+      "cfg_strength": 2.0,
+      "sway_sampling_coef": -1,
+      "seed_policy": "seed + manifest row index",
+      "solver": "euler",
+      "inference_dtype": "float32",
+      "duration_policy": "prompt-text-ratio",
+      "manifest_sha256": "3693ab0c4b9d6bebb4ec7890d5f2cccac0692665b564c5aa2645010aa5458be2",
+      "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+      "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+      "checkpoint_sha256": "7e4b090554c73fa74b83af9947d7432a1df3dbc523018c05712a9fc1509cb7d6"
+    },
+    "r8": {
+      "seed": 666,
+      "nfe_step": 32,
+      "cfg_strength": 2.0,
+      "sway_sampling_coef": -1,
+      "seed_policy": "seed + manifest row index",
+      "solver": "euler",
+      "inference_dtype": "float32",
+      "duration_policy": "prompt-text-ratio",
+      "manifest_sha256": "3693ab0c4b9d6bebb4ec7890d5f2cccac0692665b564c5aa2645010aa5458be2",
+      "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+      "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+      "checkpoint_sha256": "2a150b925f9da0d12e98554dbd22f3f5e1d9178590398a46a6f0e1663afcad91"
+    },
+    "r16": {
+      "seed": 666,
+      "nfe_step": 32,
+      "cfg_strength": 2.0,
+      "sway_sampling_coef": -1,
+      "seed_policy": "seed + manifest row index",
+      "solver": "euler",
+      "inference_dtype": "float32",
+      "duration_policy": "prompt-text-ratio",
+      "manifest_sha256": "3693ab0c4b9d6bebb4ec7890d5f2cccac0692665b564c5aa2645010aa5458be2",
+      "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+      "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+      "checkpoint_sha256": "44c8d5b0fb0d9f57e94b650516d695347609d055eccc0e8e211ffb8e37a4015d"
+    },
+    "r32": {
+      "seed": 666,
+      "nfe_step": 32,
+      "cfg_strength": 2.0,
+      "sway_sampling_coef": -1,
+      "seed_policy": "seed + manifest row index",
+      "solver": "euler",
+      "inference_dtype": "float32",
+      "duration_policy": "prompt-text-ratio",
+      "manifest_sha256": "3693ab0c4b9d6bebb4ec7890d5f2cccac0692665b564c5aa2645010aa5458be2",
+      "base_sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38",
+      "vocab_sha256": "4e173934be56219eb38759fa8d4c48132d5a34454f0c44abce409bcf6a07ec46",
+      "checkpoint_sha256": "7e1f0c920e02ec2c2d7bbc218f0d64c9cde1e1a36f1660a0564eff49c0bc6747"
+    }
+  },
+  "split_sizes": {
+    "train": {
+      "samples": 1066,
+      "minutes": 119.98787777777775
+    },
+    "val": {
+      "samples": 100,
+      "minutes": 11.56595625
+    },
+    "test": {
+      "samples": 100,
+      "minutes": 10.619744444444441
+    },
+    "reference": {
+      "samples": 2,
+      "minutes": 0.24714375000000002
+    }
+  }
+}
